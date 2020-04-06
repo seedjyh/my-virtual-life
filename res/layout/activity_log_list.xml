@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView 
+        android:id="@+id/listview_id_log_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <Button
+            android:id="@+id/button_id_oldest_log"
+			android:layout_height="match_parent"
+        	android:layout_weight="1"
+            android:layout_width="0dip"
+            android:text="@string/button_text_oldest" />
+        <Button
+            android:id="@+id/button_id_older_log"
+			android:layout_height="match_parent"
+        	android:layout_weight="1"
+            android:layout_width="0dip"
+            android:text="@string/button_text_older" />
+        <TextView 
+            android:id="@+id/textview_id_page_number"
+			android:layout_height="match_parent"
+        	android:layout_weight="2"
+            android:layout_width="0dip"
+            android:gravity="center" />
+        
+        <Button
+            android:id="@+id/button_id_newer_log"
+			android:layout_height="match_parent"
+        	android:layout_weight="1"
+            android:layout_width="0dip"
+            android:text="@string/button_text_newer" />
+        
+        <Button
+            android:id="@+id/button_id_newest_log"
+			android:layout_height="match_parent"
+        	android:layout_weight="1"
+            android:layout_width="0dip"
+            android:text="@string/button_text_newest" />
+    </LinearLayout>
+</LinearLayout>

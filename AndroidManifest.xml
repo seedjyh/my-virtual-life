@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.seedjyh.myvirtuallife"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:name="MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.seedjyh.myvirtuallife.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.seedjyh.myvirtuallife.TaskDatabaseActivity"
+            android:label="@string/activity_label_task_database" >
+        </activity>
+        <activity
+            android:name="com.seedjyh.myvirtuallife.TaskEditorActivity"
+            android:label="@string/activity_label_task_editor" >
+        </activity>
+        <activity
+            android:name="com.seedjyh.myvirtuallife.LogListActivity"
+            android:label="@string/activity_label_log_list" >
+        </activity>
+        <activity
+            android:name="com.seedjyh.myvirtuallife.TaskViewerToAcceptActivity"
+            android:label="@string/activity_label_task_viewer_to_accept" >
+        </activity>
+        <activity
+            android:name="com.seedjyh.myvirtuallife.TaskViewerToAccomplishOrAbortActivity"
+            android:label="@string/activity_label_task_viewer_to_accomplish_or_abort" >
+        </activity>
+        <activity
+            android:name="com.seedjyh.myvirtuallife.AchievementDatabaseActivity"
+            android:label="@string/activity_label_achievement_database" >
+        </activity>
+        <activity
+            android:name="com.seedjyh.myvirtuallife.AchievementEditorActivity"
+            android:label="@string/activity_label_achievement_editor" >
+        </activity>
+    </application>
+
+</manifest>

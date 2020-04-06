@@ -1,0 +1,29 @@
+数据库类型：sqlite
+数据库名称：位于R.string.database_name
+表结构：
+tb_task_list                 // 任务列表
+	id int,                  // 任务ID
+	title varchar(32)        // 任务标题
+	subtitle varchar(32)     // 任务子标题
+	description varchar(256) // 任务描述
+
+// 注：已知的10个自身属性，7个状态值，以及以后可能加入的技能（如英语），都归在“属性”里。
+// 自身属性在主面板左栏listview，状态值在主面板右栏listview，技能需要在其他Activity查看。
+tb_task_effect_list          // 任务和影响的关联列表
+	task_id int,             // 任务ID
+	player_attribute_id int, // 受到影响的玩家属性ID
+	effect_value int         // 影响值
+
+tb_player_attribute_list     // 玩家属性列表
+	id int,                  // 玩家属性ID
+	type int,                // 玩家属性类型（0：自身属性，1：状态值，2：技能）
+	name varchar(32),        // 玩家属性名称
+	description varchar(128) // 玩家属性描述
+	value int                // 玩家属性值
+
+
+
+
+
+
+

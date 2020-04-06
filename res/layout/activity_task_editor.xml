@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:text="@string/task_id_title" />
+
+        <TextView
+            android:id="@+id/text_view_id_task_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_value_of_textview" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:text="@string/title_task_title" />
+
+        <EditText
+            android:id="@+id/edit_text_id_task_title"
+            android:singleLine="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:text="@string/title_task_subtitle" />
+
+        <EditText
+            android:id="@+id/edit_text_id_task_subtitle"
+            android:singleLine="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:text="@string/title_task_description" />
+
+        <EditText
+            android:id="@+id/edit_text_id_task_description"
+            android:singleLine="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+	<ListView 
+	    android:id="@+id/listview_id_task_attribute_effect"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="1" />
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/button_id_task_editor_ok"
+            android:layout_height="wrap_content"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:text="@string/button_text_ok" />
+
+        <Button
+            android:id="@+id/button_id_task_editor_cancel"
+            android:layout_height="wrap_content"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:text="@string/button_text_cancel" />
+    </LinearLayout>
+
+</LinearLayout>

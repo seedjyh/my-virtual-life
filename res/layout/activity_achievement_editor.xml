@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:text="@string/achievement_id_title" />
+
+        <TextView
+            android:id="@+id/text_view_id_achievement_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_value_of_textview" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:text="@string/title_achievement_title" />
+
+        <EditText
+            android:id="@+id/edit_text_id_achievement_title"
+            android:singleLine="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:text="@string/title_achievement_description" />
+
+        <EditText
+            android:id="@+id/edit_text_id_achievement_description"
+            android:singleLine="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+	    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:text="@string/title_achievement_target_attribute_name" />
+
+		<Spinner  
+		    android:id="@+id/achievement_target_attribute_name_spinner"  
+		    android:layout_width="wrap_content"  
+		    android:layout_height="wrap_content"  
+		    android:layout_centerHorizontal="true" />  
+    </LinearLayout>
+
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:text="@string/title_achievement_target_attribute_value" />
+
+        <EditText
+            android:id="@+id/edit_text_id_achievement_target_attribute_value"
+            android:singleLine="true"
+            android:inputType="phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/button_id_achievement_editor_ok"
+            android:layout_height="wrap_content"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:text="@string/button_text_ok" />
+
+        <Button
+            android:id="@+id/button_id_achievement_editor_cancel"
+            android:layout_height="wrap_content"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:text="@string/button_text_cancel" />
+    </LinearLayout>
+
+</LinearLayout>

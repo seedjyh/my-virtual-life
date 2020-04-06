@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/action_add_achievement"
+        android:showAsAction="never"
+        android:title="@string/menu_title_action_add_achievement"/>
+</menu>
